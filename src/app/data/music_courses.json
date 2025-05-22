@@ -1,0 +1,58 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "Guitar Fundamentals",
+            "description": "Learn the basics of guitar playing, including chords, strumming patterns, and simple songs.",
+            "price": 49.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/courses/guitar.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Piano for Beginners",
+            "description": "An introductory course to piano playing, covering basic techniques and music theory.",
+            "price": 59.99,
+            "instructor": "Jane Smith",
+            "isFeatured": false,
+            "image": "/courses/piano.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Drum Basics",
+            "description": "A comprehensive course on drumming techniques, rhythms, and patterns.",
+            "price": 39.99,
+            "instructor": "Mike Johnson",
+            "isFeatured": true,
+            "image": "/courses/drum.jpg"   
+        },
+        {
+            "id": 4,
+            "title": "Music Theory 101",
+            "description": "Understand the fundamentals of music theory, including scales, chords, and harmony.",
+            "price": 29.99,
+            "instructor": "Emily Davis",
+            "isFeatured": false,
+            "image": "/courses/theory.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Advanced Guitar Techniques",
+            "description": "Take your guitar playing to the next level with advanced techniques and styles.",
+            "price": 79.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/courses/advanced_guitar.jpg"
+        },
+        {
+            "id":6,
+            "title": "Jazz Improvisation",
+            "description": "Learn the art of jazz improvisation, including scales, modes, and chord progressions.",
+            "price": 89.99,
+            "instructor": "Sarah Brown",
+            "isFeatured": false,
+            "image": "/courses/jazz.jpg"
+        }
+    ]
+}
