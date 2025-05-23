@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
-
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 
 const transition = {
@@ -38,8 +39,8 @@ export const MenuItem = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+          {active === item && children && (
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
@@ -89,7 +90,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <a href={href} className="flex space-x-2">
+    <Link href={href} className="flex space-x-2">
       <img
         src={src}
         width={140}
@@ -105,17 +106,17 @@ export const ProductItem = ({
           {description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <a
+    <Link
       {...rest}
       className="text-neutral-700 dark:text-neutral-200 hover:text-black "
     >
       {children}
-    </a>
+    </Link>
   );
 };
